@@ -7,4 +7,21 @@
     "lendaPreferuar": "Dr",
     "email": "edaurdspahija@hotmail.com"
   },
-  {"userId":"vegim","PasswordHash":"1000:SzQiz4MzoY4xeh2hdbc6Htb4Ysupkfn4:rvXc1V45xvmm8QR2G9siZKiaxmboAcqE","emriMbiemri":"Vigan Dika","paga":2312.0,"titulli":"Prof","email":"dahskj@gmail.com"}]
+  {
+    
+    "userId": "vegim",
+    "PasswordHash": "1000:SzQiz4MzoY4xeh2hdbc6Htb4Ysupkfn4:rvXc1V45xvmm8QR2G9siZKiaxmboAcqE",
+    "emriMbiemri": "Vigan Dika",
+    "notaMesatare": 0.0,
+    "lendaPreferuar": null,
+    "email": "dahskj@gmail.com"
+  },
+  {
+    "userId": "vegimbytyqi",
+    "PasswordHash": "1000:YdW2GZaWqmVCHrUtrHe2OaN1ByKH1/oD:cdUiMoF6i72I0+whU9CeyDoGcf93nPpF",
+    "emriMbiemri": "Vegim Bytyqi",
+    "notaMesatare": 10.0,
+    "lendaPreferuar": "Siguria e te dhenave",
+    "email": "vegim@gmail.com"
+  }
+]
