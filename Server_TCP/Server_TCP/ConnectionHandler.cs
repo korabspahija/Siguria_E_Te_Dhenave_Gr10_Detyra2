@@ -10,6 +10,8 @@ using System.Collections;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
 using System.Web.Script.Serialization;
+using System.IO;
+using System.Security.Cryptography;
 
 namespace Server_TCP
 {
@@ -37,7 +39,7 @@ namespace Server_TCP
 
                 while (true)
                 {
-                    Console.WriteLine(ReceiveData());
+                    Console.WriteLine(DesDekriptimi(ReceiveData()));
 
                     if (eDhenaEardhur.ToUpper().StartsWith("REGJISTRIMI") || eDhenaEardhur.ToUpper().StartsWith("AUTHENTIFIKIMI"))
                     {
@@ -74,7 +76,7 @@ namespace Server_TCP
 
         private void SendData(string data)
         {
-            this.Klienti.Send(Encoding.ASCII.GetBytes(data));
+           this.Klienti.Send(Encoding.ASCII.GetBytes(data));
         }
 
         private string ReceiveData()
@@ -89,7 +91,7 @@ namespace Server_TCP
         private string DefaultFunctions()
         {
             //string allFunctions = "\nKomandat e mundshme \n(REGJISTRIMI, AUTHENTIFIKIMI)";
-            string allFunctions = "\n";
+            string allFunctions = "HAHAHAHA";
             return allFunctions;
         }
 
@@ -192,6 +194,54 @@ namespace Server_TCP
             }
 
             return return_value;
+        }
+        ///DES ENKRIPTIMI/////
+        private string DesEnkriptimi(string tekstiPerEnkriptim)
+        {
+            DESCryptoServiceProvider objDES =
+                new DESCryptoServiceProvider();
+            objDES.Key = Encoding.UTF8.GetBytes("12345678");
+            objDES.IV = Encoding.UTF8.GetBytes("12345678");
+            objDES.Padding = PaddingMode.Zeros;
+            objDES.Mode = CipherMode.CBC;
+
+            byte[] bytePlaintext =
+                Encoding.UTF8.GetBytes(tekstiPerEnkriptim);
+            MemoryStream ms = new MemoryStream();
+
+            CryptoStream cs = new CryptoStream(ms,
+                                objDES.CreateEncryptor(),
+                                CryptoStreamMode.Write);
+            cs.Write(bytePlaintext, 0, bytePlaintext.Length);
+            cs.Close();
+
+            byte[] byteCiphertexti = ms.ToArray();
+            return Convert.ToBase64String(byteCiphertexti);
+            //Encoding.UTF8.GetString(byteCiphertexti);
+
+        }
+
+        ///DES DEKRIPTIMI/////
+        private string DesDekriptimi(string tekstiPerDekriptim)
+        {
+            DESCryptoServiceProvider objDES = new DESCryptoServiceProvider();
+            objDES.Key = Encoding.UTF8.GetBytes("12345678");
+            objDES.IV = Encoding.UTF8.GetBytes("12345678");
+            objDES.Padding = PaddingMode.Zeros;
+            objDES.Mode = CipherMode.CBC;
+
+            byte[] byteCiphertexti = Convert.FromBase64String(tekstiPerDekriptim);
+            MemoryStream ms = new MemoryStream(byteCiphertexti);
+
+            byte[] byteTextiDekriptuar = new byte[ms.Length];
+            CryptoStream cs =
+                new CryptoStream(ms,
+                        objDES.CreateDecryptor(),
+                        CryptoStreamMode.Read);
+            cs.Read(byteTextiDekriptuar, 0, byteTextiDekriptuar.Length);
+            cs.Close();
+
+            return Encoding.UTF8.GetString(byteTextiDekriptuar);
         }
 
     }
