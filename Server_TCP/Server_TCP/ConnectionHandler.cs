@@ -91,7 +91,7 @@ namespace Server_TCP
         private string DefaultFunctions()
         {
             //string allFunctions = "\nKomandat e mundshme \n(REGJISTRIMI, AUTHENTIFIKIMI)";
-            string allFunctions = "HAHAHAHA";
+            string allFunctions = "\n";
             return allFunctions;
         }
 
