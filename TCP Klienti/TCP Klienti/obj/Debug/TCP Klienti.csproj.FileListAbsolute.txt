@@ -1,0 +1,36 @@
+C:\Users\eduar\Documents\GitHub\DS_1819_Gr3\Detyra 2\TCP Klienti\TCP Klienti\bin\Debug\TCP Klienti Eduard.exe.config
+C:\Users\eduar\Documents\GitHub\DS_1819_Gr3\Detyra 2\TCP Klienti\TCP Klienti\bin\Debug\TCP Klienti Eduard.exe
+C:\Users\eduar\Documents\GitHub\DS_1819_Gr3\Detyra 2\TCP Klienti\TCP Klienti\bin\Debug\TCP Klienti Eduard.pdb
+C:\Users\eduar\Documents\GitHub\DS_1819_Gr3\Detyra 2\TCP Klienti\TCP Klienti\bin\Debug\Newtonsoft.Json.dll
+C:\Users\eduar\Documents\GitHub\DS_1819_Gr3\Detyra 2\TCP Klienti\TCP Klienti\obj\Debug\TCP Klienti.csprojAssemblyReference.cache
+C:\Users\eduar\Documents\GitHub\DS_1819_Gr3\Detyra 2\TCP Klienti\TCP Klienti\obj\Debug\TCP_Klienti_Eduard.Client.resources
+C:\Users\eduar\Documents\GitHub\DS_1819_Gr3\Detyra 2\TCP Klienti\TCP Klienti\obj\Debug\TCP_Klienti_Eduard.Properties.Resources.resources
+C:\Users\eduar\Documents\GitHub\DS_1819_Gr3\Detyra 2\TCP Klienti\TCP Klienti\obj\Debug\TCP Klienti.csproj.GenerateResource.cache
+C:\Users\eduar\Documents\GitHub\DS_1819_Gr3\Detyra 2\TCP Klienti\TCP Klienti\obj\Debug\TCP Klienti.csproj.CoreCompileInputs.cache
+C:\Users\eduar\Documents\GitHub\DS_1819_Gr3\Detyra 2\TCP Klienti\TCP Klienti\obj\Debug\TCP Klienti.csproj.CopyComplete
+C:\Users\eduar\Documents\GitHub\DS_1819_Gr3\Detyra 2\TCP Klienti\TCP Klienti\obj\Debug\TCP Klienti Eduard.exe
+C:\Users\eduar\Documents\GitHub\DS_1819_Gr3\Detyra 2\TCP Klienti\TCP Klienti\obj\Debug\TCP Klienti Eduard.pdb
+C:\Users\Admin\Desktop\Detyra 2\TCP Klienti\TCP Klienti\bin\Debug\TCP Klienti Eduard.exe.config
+C:\Users\Admin\Desktop\Detyra 2\TCP Klienti\TCP Klienti\bin\Debug\TCP Klienti Eduard.exe
+C:\Users\Admin\Desktop\Detyra 2\TCP Klienti\TCP Klienti\bin\Debug\TCP Klienti Eduard.pdb
+C:\Users\Admin\Desktop\Detyra 2\TCP Klienti\TCP Klienti\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\Detyra 2\TCP Klienti\TCP Klienti\obj\Debug\TCP Klienti.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\Detyra 2\TCP Klienti\TCP Klienti\obj\Debug\TCP_Klienti_Eduard.Client.resources
+C:\Users\Admin\Desktop\Detyra 2\TCP Klienti\TCP Klienti\obj\Debug\TCP_Klienti_Eduard.Properties.Resources.resources
+C:\Users\Admin\Desktop\Detyra 2\TCP Klienti\TCP Klienti\obj\Debug\TCP Klienti.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\Detyra 2\TCP Klienti\TCP Klienti\obj\Debug\TCP Klienti.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Detyra 2\TCP Klienti\TCP Klienti\obj\Debug\TCP Klienti.csproj.CopyComplete
+C:\Users\Admin\Desktop\Detyra 2\TCP Klienti\TCP Klienti\obj\Debug\TCP Klienti Eduard.exe
+C:\Users\Admin\Desktop\Detyra 2\TCP Klienti\TCP Klienti\obj\Debug\TCP Klienti Eduard.pdb
+C:\Users\PC\Desktop\Siguri_2\Detyra 2\TCP Klienti\TCP Klienti\bin\Debug\TCP Klienti Eduard.exe.config
+C:\Users\PC\Desktop\Siguri_2\Detyra 2\TCP Klienti\TCP Klienti\bin\Debug\TCP Klienti Eduard.exe
+C:\Users\PC\Desktop\Siguri_2\Detyra 2\TCP Klienti\TCP Klienti\bin\Debug\TCP Klienti Eduard.pdb
+C:\Users\PC\Desktop\Siguri_2\Detyra 2\TCP Klienti\TCP Klienti\bin\Debug\Newtonsoft.Json.dll
+C:\Users\PC\Desktop\Siguri_2\Detyra 2\TCP Klienti\TCP Klienti\obj\Debug\TCP Klienti.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\Siguri_2\Detyra 2\TCP Klienti\TCP Klienti\obj\Debug\TCP_Klienti_Eduard.Properties.Resources.resources
+C:\Users\PC\Desktop\Siguri_2\Detyra 2\TCP Klienti\TCP Klienti\obj\Debug\TCP Klienti.csproj.GenerateResource.cache
+C:\Users\PC\Desktop\Siguri_2\Detyra 2\TCP Klienti\TCP Klienti\obj\Debug\TCP Klienti.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\Siguri_2\Detyra 2\TCP Klienti\TCP Klienti\obj\Debug\TCP Klienti.csproj.CopyComplete
+C:\Users\PC\Desktop\Siguri_2\Detyra 2\TCP Klienti\TCP Klienti\obj\Debug\TCP Klienti Eduard.exe
+C:\Users\PC\Desktop\Siguri_2\Detyra 2\TCP Klienti\TCP Klienti\obj\Debug\TCP Klienti Eduard.pdb
+C:\Users\PC\Desktop\Siguri_2\Detyra 2\TCP Klienti\TCP Klienti\obj\Debug\TCP_Klienti.Client.resources
