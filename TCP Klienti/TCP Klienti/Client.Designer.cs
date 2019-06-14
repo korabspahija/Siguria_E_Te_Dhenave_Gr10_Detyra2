@@ -65,10 +65,9 @@
             // 
             // btnConnect
             // 
-            this.btnConnect.Location = new System.Drawing.Point(453, 15);
-            this.btnConnect.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnConnect.Location = new System.Drawing.Point(302, 10);
             this.btnConnect.Name = "btnConnect";
-            this.btnConnect.Size = new System.Drawing.Size(112, 34);
+            this.btnConnect.Size = new System.Drawing.Size(75, 22);
             this.btnConnect.TabIndex = 21;
             this.btnConnect.Text = "Connect";
             this.btnConnect.UseVisualStyleBackColor = true;
@@ -77,60 +76,54 @@
             // txtIP
             // 
             this.txtIP.Enabled = false;
-            this.txtIP.Location = new System.Drawing.Point(114, 15);
-            this.txtIP.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtIP.Location = new System.Drawing.Point(76, 10);
             this.txtIP.Name = "txtIP";
-            this.txtIP.Size = new System.Drawing.Size(145, 26);
+            this.txtIP.Size = new System.Drawing.Size(98, 20);
             this.txtIP.TabIndex = 20;
             this.txtIP.Text = "127.0.0.1";
             // 
             // txtPorti
             // 
             this.txtPorti.Enabled = false;
-            this.txtPorti.Location = new System.Drawing.Point(326, 15);
-            this.txtPorti.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPorti.Location = new System.Drawing.Point(217, 10);
             this.txtPorti.Name = "txtPorti";
-            this.txtPorti.Size = new System.Drawing.Size(100, 26);
+            this.txtPorti.Size = new System.Drawing.Size(68, 20);
             this.txtPorti.TabIndex = 17;
             this.txtPorti.Text = "7000";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(270, 20);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(180, 13);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 20);
+            this.label4.Size = new System.Drawing.Size(31, 13);
             this.label4.TabIndex = 19;
             this.label4.Text = "Porti:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 20);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(14, 13);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 20);
+            this.label3.Size = new System.Drawing.Size(56, 13);
             this.label3.TabIndex = 18;
             this.label3.Text = "IP Adresa:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 506);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(14, 329);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(183, 20);
+            this.label2.Size = new System.Drawing.Size(122, 13);
             this.label2.TabIndex = 16;
             this.label2.Text = "Përgjegja nga SERVERI";
             // 
             // txtReceiveAnswer
             // 
-            this.txtReceiveAnswer.Location = new System.Drawing.Point(26, 531);
-            this.txtReceiveAnswer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtReceiveAnswer.Location = new System.Drawing.Point(17, 345);
             this.txtReceiveAnswer.Multiline = true;
             this.txtReceiveAnswer.Name = "txtReceiveAnswer";
-            this.txtReceiveAnswer.Size = new System.Drawing.Size(890, 102);
+            this.txtReceiveAnswer.Size = new System.Drawing.Size(595, 68);
             this.txtReceiveAnswer.TabIndex = 15;
             // 
             // grbRegjistrimi
@@ -148,21 +141,18 @@
             this.grbRegjistrimi.Controls.Add(this.lblTitulli);
             this.grbRegjistrimi.Controls.Add(this.lblEmriMbiemri);
             this.grbRegjistrimi.Controls.Add(this.lblUserName);
-            this.grbRegjistrimi.Location = new System.Drawing.Point(2, 105);
-            this.grbRegjistrimi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.grbRegjistrimi.Location = new System.Drawing.Point(1, 68);
             this.grbRegjistrimi.Name = "grbRegjistrimi";
-            this.grbRegjistrimi.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.grbRegjistrimi.Size = new System.Drawing.Size(474, 388);
+            this.grbRegjistrimi.Size = new System.Drawing.Size(316, 252);
             this.grbRegjistrimi.TabIndex = 22;
             this.grbRegjistrimi.TabStop = false;
             this.grbRegjistrimi.Text = "Regjistrimi i mësimdhënësit";
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(354, 331);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnSave.Location = new System.Drawing.Point(236, 215);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(112, 35);
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 40;
             this.btnSave.Text = "Ruaje";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -170,71 +160,63 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(174, 280);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPassword.Location = new System.Drawing.Point(116, 182);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(292, 26);
+            this.txtPassword.Size = new System.Drawing.Size(196, 20);
             this.txtPassword.TabIndex = 39;
             // 
             // txtUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(174, 228);
-            this.txtUserName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtUserName.Location = new System.Drawing.Point(116, 148);
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(292, 26);
+            this.txtUserName.Size = new System.Drawing.Size(196, 20);
             this.txtUserName.TabIndex = 38;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(174, 182);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtEmail.Location = new System.Drawing.Point(116, 118);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(292, 26);
+            this.txtEmail.Size = new System.Drawing.Size(196, 20);
             this.txtEmail.TabIndex = 37;
             // 
             // txtNotaMesatare
             // 
-            this.txtNotaMesatare.Location = new System.Drawing.Point(174, 138);
-            this.txtNotaMesatare.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtNotaMesatare.Location = new System.Drawing.Point(116, 90);
             this.txtNotaMesatare.Name = "txtNotaMesatare";
-            this.txtNotaMesatare.Size = new System.Drawing.Size(292, 26);
+            this.txtNotaMesatare.Size = new System.Drawing.Size(196, 20);
             this.txtNotaMesatare.TabIndex = 36;
             this.txtNotaMesatare.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPaga_KeyPress);
             // 
             // txtLendaPreferuar
             // 
-            this.txtLendaPreferuar.Location = new System.Drawing.Point(174, 92);
-            this.txtLendaPreferuar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtLendaPreferuar.Location = new System.Drawing.Point(116, 60);
             this.txtLendaPreferuar.Name = "txtLendaPreferuar";
-            this.txtLendaPreferuar.Size = new System.Drawing.Size(292, 26);
+            this.txtLendaPreferuar.Size = new System.Drawing.Size(196, 20);
             this.txtLendaPreferuar.TabIndex = 35;
             // 
             // txtEmriMbiemri
             // 
-            this.txtEmriMbiemri.Location = new System.Drawing.Point(174, 46);
-            this.txtEmriMbiemri.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtEmriMbiemri.Location = new System.Drawing.Point(116, 30);
             this.txtEmriMbiemri.Name = "txtEmriMbiemri";
-            this.txtEmriMbiemri.Size = new System.Drawing.Size(292, 26);
+            this.txtEmriMbiemri.Size = new System.Drawing.Size(196, 20);
             this.txtEmriMbiemri.TabIndex = 34;
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(21, 280);
-            this.lblPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPassword.Location = new System.Drawing.Point(14, 182);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(82, 20);
+            this.lblPassword.Size = new System.Drawing.Size(56, 13);
             this.lblPassword.TabIndex = 33;
             this.lblPassword.Text = "Password:";
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(21, 182);
-            this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEmail.Location = new System.Drawing.Point(14, 118);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(105, 20);
+            this.lblEmail.Size = new System.Drawing.Size(70, 13);
             this.lblEmail.TabIndex = 32;
             this.lblEmail.Text = "Email adresa:";
             this.lblEmail.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -242,10 +224,9 @@
             // lblPaga
             // 
             this.lblPaga.AutoSize = true;
-            this.lblPaga.Location = new System.Drawing.Point(21, 138);
-            this.lblPaga.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPaga.Location = new System.Drawing.Point(14, 90);
             this.lblPaga.Name = "lblPaga";
-            this.lblPaga.Size = new System.Drawing.Size(118, 20);
+            this.lblPaga.Size = new System.Drawing.Size(80, 13);
             this.lblPaga.TabIndex = 31;
             this.lblPaga.Text = "Nota Mesatare:";
             this.lblPaga.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -253,10 +234,9 @@
             // lblTitulli
             // 
             this.lblTitulli.AutoSize = true;
-            this.lblTitulli.Location = new System.Drawing.Point(21, 95);
-            this.lblTitulli.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTitulli.Location = new System.Drawing.Point(14, 62);
             this.lblTitulli.Name = "lblTitulli";
-            this.lblTitulli.Size = new System.Drawing.Size(140, 20);
+            this.lblTitulli.Size = new System.Drawing.Size(94, 13);
             this.lblTitulli.TabIndex = 30;
             this.lblTitulli.Text = "Lenda e preferuar:";
             this.lblTitulli.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -264,10 +244,9 @@
             // lblEmriMbiemri
             // 
             this.lblEmriMbiemri.AutoSize = true;
-            this.lblEmriMbiemri.Location = new System.Drawing.Point(19, 46);
-            this.lblEmriMbiemri.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEmriMbiemri.Location = new System.Drawing.Point(13, 30);
             this.lblEmriMbiemri.Name = "lblEmriMbiemri";
-            this.lblEmriMbiemri.Size = new System.Drawing.Size(104, 20);
+            this.lblEmriMbiemri.Size = new System.Drawing.Size(69, 13);
             this.lblEmriMbiemri.TabIndex = 29;
             this.lblEmriMbiemri.Text = "Emri Mbiemri:";
             this.lblEmriMbiemri.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -275,10 +254,9 @@
             // lblUserName
             // 
             this.lblUserName.AutoSize = true;
-            this.lblUserName.Location = new System.Drawing.Point(21, 231);
-            this.lblUserName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUserName.Location = new System.Drawing.Point(14, 150);
             this.lblUserName.Name = "lblUserName";
-            this.lblUserName.Size = new System.Drawing.Size(93, 20);
+            this.lblUserName.Size = new System.Drawing.Size(63, 13);
             this.lblUserName.TabIndex = 28;
             this.lblUserName.Text = "User Name:";
             // 
@@ -293,21 +271,18 @@
             this.groupBox2.Controls.Add(this.txtUserName1);
             this.groupBox2.Controls.Add(this.lblPassword1);
             this.groupBox2.Controls.Add(this.lblUserName1);
-            this.groupBox2.Location = new System.Drawing.Point(484, 105);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox2.Location = new System.Drawing.Point(323, 68);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox2.Size = new System.Drawing.Size(434, 388);
+            this.groupBox2.Size = new System.Drawing.Size(289, 252);
             this.groupBox2.TabIndex = 23;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Autentifikimi";
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(294, 331);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnLogin.Location = new System.Drawing.Point(196, 215);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(112, 35);
+            this.btnLogin.Size = new System.Drawing.Size(75, 23);
             this.btnLogin.TabIndex = 45;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -315,46 +290,42 @@
             // 
             // txtPassword1
             // 
-            this.txtPassword1.Location = new System.Drawing.Point(112, 141);
-            this.txtPassword1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPassword1.Location = new System.Drawing.Point(75, 92);
             this.txtPassword1.Name = "txtPassword1";
             this.txtPassword1.PasswordChar = '*';
-            this.txtPassword1.Size = new System.Drawing.Size(292, 26);
+            this.txtPassword1.Size = new System.Drawing.Size(196, 20);
             this.txtPassword1.TabIndex = 44;
             // 
             // txtUserName1
             // 
-            this.txtUserName1.Location = new System.Drawing.Point(112, 95);
-            this.txtUserName1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtUserName1.Location = new System.Drawing.Point(75, 62);
             this.txtUserName1.Name = "txtUserName1";
-            this.txtUserName1.Size = new System.Drawing.Size(292, 26);
+            this.txtUserName1.Size = new System.Drawing.Size(196, 20);
             this.txtUserName1.TabIndex = 43;
             // 
             // lblPassword1
             // 
             this.lblPassword1.AutoSize = true;
-            this.lblPassword1.Location = new System.Drawing.Point(8, 141);
-            this.lblPassword1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPassword1.Location = new System.Drawing.Point(5, 92);
             this.lblPassword1.Name = "lblPassword1";
-            this.lblPassword1.Size = new System.Drawing.Size(82, 20);
+            this.lblPassword1.Size = new System.Drawing.Size(56, 13);
             this.lblPassword1.TabIndex = 42;
             this.lblPassword1.Text = "Password:";
             // 
             // lblUserName1
             // 
             this.lblUserName1.AutoSize = true;
-            this.lblUserName1.Location = new System.Drawing.Point(8, 98);
-            this.lblUserName1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUserName1.Location = new System.Drawing.Point(5, 64);
             this.lblUserName1.Name = "lblUserName1";
-            this.lblUserName1.Size = new System.Drawing.Size(93, 20);
+            this.lblUserName1.Size = new System.Drawing.Size(63, 13);
             this.lblUserName1.TabIndex = 41;
             this.lblUserName1.Text = "User Name:";
             // 
             // Client
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(933, 649);
+            this.ClientSize = new System.Drawing.Size(622, 422);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.grbRegjistrimi);
             this.Controls.Add(this.btnConnect);
@@ -365,9 +336,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Client";
             this.Text = "FIEK-TCP Klienti";
+            this.Load += new System.EventHandler(this.Client_Load);
             this.grbRegjistrimi.ResumeLayout(false);
             this.grbRegjistrimi.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();

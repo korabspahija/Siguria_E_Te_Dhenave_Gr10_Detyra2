@@ -149,12 +149,12 @@ namespace TCP_Klienti
 
             bool bValidEmriMbiemri = ValidateField(txtEmriMbiemri, "Emri Mbiemri duhet të shënohet!", errorProvider1);
             bool bValidEmail = ValidateEmail(txtEmail, errorProvider1);
-            bool bValidTitulli = ValidateField(txtLendaPreferuar, "Titulli duhet të shënohet!", errorProvider1);
-            bool bValidPaga = ValidateField(txtNotaMesatare, "Paga duhet të shënohet!", errorProvider1);
+            bool bValidLendaPreferuar = ValidateField(txtLendaPreferuar, "Lenda e preferuar duhet të shënohet!", errorProvider1);
+            bool bValidNotaMesatare = ValidateField(txtNotaMesatare, "Nota mesatare duhet të shënohet!", errorProvider1);
             bool bValidUserName = ValidateField(txtUserName, "UserName-i duhet të shënohet!", errorProvider1);
             bool bValidPassword = ValidateField(txtPassword, "Pasword-i duhet të shënohet!", errorProvider1);
 
-            if (!bValidEmriMbiemri || !bValidEmail || !bValidTitulli || !bValidPaga || !bValidUserName || !bValidPassword)
+            if (!bValidEmriMbiemri || !bValidEmail || !bValidLendaPreferuar || !bValidNotaMesatare || !bValidUserName || !bValidPassword)
                 MessageBox.Show("Të dhënat janë jo valide!", "Vërejtje", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else
             {
@@ -225,6 +225,9 @@ namespace TCP_Klienti
 
         }
 
-        
+        private void Client_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
