@@ -39,7 +39,8 @@ namespace Server_TCP
 
                 while (true)
                 {
-                    Console.WriteLine(DesDekriptimi(ReceiveData()));
+                    string test = ReceiveData().Substring(10);
+                    Console.WriteLine(DesDekriptimi(test));
 
                     if (eDhenaEardhur.ToUpper().StartsWith("REGJISTRIMI") || eDhenaEardhur.ToUpper().StartsWith("AUTHENTIFIKIMI"))
                     {

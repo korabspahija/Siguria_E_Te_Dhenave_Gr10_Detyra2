@@ -15,6 +15,8 @@ using System.Text.RegularExpressions;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Web.Script.Serialization;
+using System.IO;
+using System.Security.Cryptography;
 
 namespace TCP_Klienti
 {
@@ -168,12 +170,13 @@ namespace TCP_Klienti
                     student.lendaPreferuar = txtLendaPreferuar.Text.Trim();
                     student.PasswordHash = txtPassword.Text.Trim();
 
-                    //JavaScriptSerializer js = new JavaScriptSerializer();
-                    //string json = js.Serialize(mesimdhenesi); 
+
+
 
                     string json = JsonConvert.SerializeObject(student);
-                    string SendCommand = "Regjistrimi " + json;                    
-                    SendRequestToSrv(SendCommand);
+                    
+                    string SendCommand =  json;                    
+                    SendRequestToSrv("Regjistrimi " + DesEnkriptimi(SendCommand));
 
                     txtReceiveAnswer.AppendText("\n");
                     txtReceiveAnswer.Refresh();
@@ -227,6 +230,30 @@ namespace TCP_Klienti
 
         private void Client_Load(object sender, EventArgs e)
         {
+
+        }
+        private string DesEnkriptimi(string tekstiPerEnkriptim)
+        {
+            DESCryptoServiceProvider objDES =
+                new DESCryptoServiceProvider();
+            objDES.Key = Encoding.UTF8.GetBytes("12345678");
+            objDES.IV = Encoding.UTF8.GetBytes("12345678");
+            objDES.Padding = PaddingMode.Zeros;
+            objDES.Mode = CipherMode.CBC;
+
+            byte[] bytePlaintext =
+                Encoding.UTF8.GetBytes(tekstiPerEnkriptim);
+            MemoryStream ms = new MemoryStream();
+
+            CryptoStream cs = new CryptoStream(ms,
+                                objDES.CreateEncryptor(),
+                                CryptoStreamMode.Write);
+            cs.Write(bytePlaintext, 0, bytePlaintext.Length);
+            cs.Close();
+
+            byte[] byteCiphertexti = ms.ToArray();
+            return Convert.ToBase64String(byteCiphertexti);
+            //Encoding.UTF8.GetString(byteCiphertexti);
 
         }
     }

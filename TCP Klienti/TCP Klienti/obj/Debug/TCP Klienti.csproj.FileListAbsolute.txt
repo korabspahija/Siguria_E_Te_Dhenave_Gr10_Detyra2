@@ -46,3 +46,15 @@ C:\Users\Admin\Desktop\Git\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP Klienti\TCP Kli
 C:\Users\Admin\Desktop\Git\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP Klienti\TCP Klienti\obj\Debug\TCP Klienti.csproj.CopyComplete
 C:\Users\Admin\Desktop\Git\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP Klienti\TCP Klienti\obj\Debug\TCP Klienti Eduard.exe
 C:\Users\Admin\Desktop\Git\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP Klienti\TCP Klienti\obj\Debug\TCP Klienti Eduard.pdb
+C:\Users\Admin\Documents\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP Klienti\TCP Klienti\bin\Debug\TCP Klienti Eduard.exe.config
+C:\Users\Admin\Documents\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP Klienti\TCP Klienti\bin\Debug\TCP Klienti Eduard.exe
+C:\Users\Admin\Documents\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP Klienti\TCP Klienti\bin\Debug\TCP Klienti Eduard.pdb
+C:\Users\Admin\Documents\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP Klienti\TCP Klienti\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Admin\Documents\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP Klienti\TCP Klienti\obj\Debug\TCP Klienti.csprojAssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP Klienti\TCP Klienti\obj\Debug\TCP_Klienti.Client.resources
+C:\Users\Admin\Documents\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP Klienti\TCP Klienti\obj\Debug\TCP_Klienti_Eduard.Properties.Resources.resources
+C:\Users\Admin\Documents\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP Klienti\TCP Klienti\obj\Debug\TCP Klienti.csproj.GenerateResource.cache
+C:\Users\Admin\Documents\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP Klienti\TCP Klienti\obj\Debug\TCP Klienti.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP Klienti\TCP Klienti\obj\Debug\TCP Klienti.csproj.CopyComplete
+C:\Users\Admin\Documents\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP Klienti\TCP Klienti\obj\Debug\TCP Klienti Eduard.exe
+C:\Users\Admin\Documents\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP Klienti\TCP Klienti\obj\Debug\TCP Klienti Eduard.pdb
