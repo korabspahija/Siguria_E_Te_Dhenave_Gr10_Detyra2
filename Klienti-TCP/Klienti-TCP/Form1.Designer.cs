@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.grbRegjistrimi = new System.Windows.Forms.GroupBox();
+            this.btnRuaj = new System.Windows.Forms.Button();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtLendaPreferuar = new System.Windows.Forms.TextBox();
-            this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtNotaMesatare = new System.Windows.Forms.TextBox();
             this.txtMbiemri = new System.Windows.Forms.TextBox();
@@ -49,17 +49,17 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.btnRuaj = new System.Windows.Forms.Button();
+            this.txtLendaPreferuar = new System.Windows.Forms.TextBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
             this.grbRegjistrimi.SuspendLayout();
             this.SuspendLayout();
             // 
             // grbRegjistrimi
             // 
+            this.grbRegjistrimi.Controls.Add(this.txtLendaPreferuar);
             this.grbRegjistrimi.Controls.Add(this.btnRuaj);
             this.grbRegjistrimi.Controls.Add(this.txtPassword);
             this.grbRegjistrimi.Controls.Add(this.label1);
-            this.grbRegjistrimi.Controls.Add(this.txtLendaPreferuar);
             this.grbRegjistrimi.Controls.Add(this.txtUsername);
             this.grbRegjistrimi.Controls.Add(this.txtEmail);
             this.grbRegjistrimi.Controls.Add(this.txtNotaMesatare);
@@ -78,6 +78,24 @@
             this.grbRegjistrimi.TabStop = false;
             this.grbRegjistrimi.Text = "Regjistrimi i studentit";
             // 
+            // btnRuaj
+            // 
+            this.btnRuaj.Location = new System.Drawing.Point(216, 259);
+            this.btnRuaj.Name = "btnRuaj";
+            this.btnRuaj.Size = new System.Drawing.Size(102, 26);
+            this.btnRuaj.TabIndex = 43;
+            this.btnRuaj.Text = "Ruaj";
+            this.btnRuaj.UseVisualStyleBackColor = true;
+            this.btnRuaj.Click += new System.EventHandler(this.BtnRuaj_Click);
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.Location = new System.Drawing.Point(115, 197);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(196, 20);
+            this.txtPassword.TabIndex = 42;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -88,24 +106,9 @@
             this.label1.Text = "Mbiemri:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // txtLendaPreferuar
-            // 
-            this.txtLendaPreferuar.Location = new System.Drawing.Point(115, 191);
-            this.txtLendaPreferuar.Name = "txtLendaPreferuar";
-            this.txtLendaPreferuar.PasswordChar = '*';
-            this.txtLendaPreferuar.Size = new System.Drawing.Size(196, 20);
-            this.txtLendaPreferuar.TabIndex = 39;
-            // 
-            // txtUsername
-            // 
-            this.txtUsername.Location = new System.Drawing.Point(115, 153);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(196, 20);
-            this.txtUsername.TabIndex = 38;
-            // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(116, 118);
+            this.txtEmail.Location = new System.Drawing.Point(115, 125);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(196, 20);
             this.txtEmail.TabIndex = 37;
@@ -134,7 +137,7 @@
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(15, 226);
+            this.lblPassword.Location = new System.Drawing.Point(15, 200);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(56, 13);
             this.lblPassword.TabIndex = 33;
@@ -163,7 +166,7 @@
             // lblTitulli
             // 
             this.lblTitulli.AutoSize = true;
-            this.lblTitulli.Location = new System.Drawing.Point(13, 191);
+            this.lblTitulli.Location = new System.Drawing.Point(15, 233);
             this.lblTitulli.Name = "lblTitulli";
             this.lblTitulli.Size = new System.Drawing.Size(94, 13);
             this.lblTitulli.TabIndex = 30;
@@ -253,23 +256,19 @@
             this.label2.TabIndex = 25;
             this.label2.Text = "Përgjegja nga SERVERI";
             // 
-            // txtPassword
+            // txtLendaPreferuar
             // 
-            this.txtPassword.Location = new System.Drawing.Point(115, 223);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(196, 20);
-            this.txtPassword.TabIndex = 42;
+            this.txtLendaPreferuar.Location = new System.Drawing.Point(115, 233);
+            this.txtLendaPreferuar.Name = "txtLendaPreferuar";
+            this.txtLendaPreferuar.Size = new System.Drawing.Size(196, 20);
+            this.txtLendaPreferuar.TabIndex = 44;
             // 
-            // btnRuaj
+            // txtUsername
             // 
-            this.btnRuaj.Location = new System.Drawing.Point(216, 259);
-            this.btnRuaj.Name = "btnRuaj";
-            this.btnRuaj.Size = new System.Drawing.Size(102, 26);
-            this.btnRuaj.TabIndex = 43;
-            this.btnRuaj.Text = "Ruaj";
-            this.btnRuaj.UseVisualStyleBackColor = true;
-            this.btnRuaj.Click += new System.EventHandler(this.BtnRuaj_Click);
+            this.txtUsername.Location = new System.Drawing.Point(115, 160);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(196, 20);
+            this.txtUsername.TabIndex = 38;
             // 
             // Klienti
             // 
@@ -298,8 +297,6 @@
 
         internal System.Windows.Forms.GroupBox grbRegjistrimi;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtLendaPreferuar;
-        private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtNotaMesatare;
         private System.Windows.Forms.TextBox txtMbiemri;
@@ -319,6 +316,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnRuaj;
         private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox txtLendaPreferuar;
+        private System.Windows.Forms.TextBox txtUsername;
     }
 }
 

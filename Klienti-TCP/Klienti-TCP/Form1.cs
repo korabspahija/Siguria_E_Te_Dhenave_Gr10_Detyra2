@@ -13,6 +13,9 @@ namespace Klienti_TCP
 {
     public partial class Klienti : Form
     {
+
+        string[] sendingArray = new string[7]; 
+
         public Klienti()
         {
             InitializeComponent();
@@ -44,7 +47,18 @@ namespace Klienti_TCP
 
         private void BtnRuaj_Click(object sender, EventArgs e)
         {
-            client.WriteLineAndGetReply(txtEmri.Text, TimeSpan.FromSeconds(3));
+
+            sendingArray[0] = txtEmri.Text;
+            sendingArray[1] = txtMbiemri.Text;
+            sendingArray[2] = txtNotaMesatare.Text;
+            sendingArray[3] = txtEmail.Text;
+            sendingArray[4] = txtUsername.Text;
+            sendingArray[5] = txtPassword.Text;
+            sendingArray[6] = txtLendaPreferuar.Text;
+
+            string test = string.Join(" ", sendingArray);
+
+            client.WriteLineAndGetReply(test, TimeSpan.FromSeconds(3));
         }
     }
 }
