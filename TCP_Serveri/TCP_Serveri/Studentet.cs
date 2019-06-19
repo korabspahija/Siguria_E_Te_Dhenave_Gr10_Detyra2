@@ -10,7 +10,8 @@ namespace TCP_Serveri
     {
         public string userId { get; set; }
         public string PasswordHash { get; set; }
-        public string emriMbiemri { get; set; }
+        public string emri { get; set; }
+        public string mbiemri { get; set; }
         public decimal notaMesatare { get; set; }
         public string lendaPreferuar { get; set; }
         public string email { get; set; }

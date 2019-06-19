@@ -4,7 +4,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,6 +16,9 @@ namespace TCP_Serveri
 {
     public partial class Serveri : Form
     {
+        DESCryptoServiceProvider objDes = new DESCryptoServiceProvider();
+        string key;
+        string iv;
         public Serveri()
         {
             InitializeComponent();
@@ -52,6 +57,46 @@ namespace TCP_Serveri
             if (server.IsStarted)
                 server.Stop();  
         }
+        private string encrypt(string plaintext, string key, string iv)
+        {
+            objDes.Key = Encoding.Default.GetBytes(key);
+            objDes.IV = Encoding.Default.GetBytes(iv);
+            objDes.Padding = PaddingMode.Zeros;
+            objDes.Mode = CipherMode.CBC;
 
+
+            byte[] bytePlaintexti = Encoding.UTF8.GetBytes(plaintext);
+
+            MemoryStream ms = new MemoryStream();
+            CryptoStream cs = new CryptoStream(ms, objDes.CreateEncryptor(), CryptoStreamMode.Write);
+            cs.Write(bytePlaintexti, 0, bytePlaintexti.Length);
+            cs.Close();
+
+            byte[] byteCiphertexti = ms.ToArray();
+
+            return Convert.ToBase64String(byteCiphertexti);
+
+        }
+        private string decrypt(string ciphertext)
+        {
+            string[] info = ciphertext.Split('.');
+            key = info[1];
+            iv = info[0];
+            objDes.Key = Encoding.Default.GetBytes(info[1]);
+            objDes.IV = Encoding.Default.GetBytes(info[0]);
+            objDes.Padding = PaddingMode.Zeros;
+            objDes.Mode = CipherMode.CBC;
+
+            byte[] byteCiphertexti = Convert.FromBase64String(info[2]);
+            MemoryStream ms = new MemoryStream(byteCiphertexti);
+            CryptoStream cs = new CryptoStream(ms, objDes.CreateDecryptor(), CryptoStreamMode.Read);
+
+            byte[] byteTextiDekriptuar = new byte[ms.Length];
+            cs.Read(byteTextiDekriptuar, 0, byteTextiDekriptuar.Length);
+            cs.Close();
+
+
+            return Encoding.UTF8.GetString(byteTextiDekriptuar);
+        }
     }
 }
