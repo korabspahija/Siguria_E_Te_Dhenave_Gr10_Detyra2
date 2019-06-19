@@ -98,5 +98,41 @@ namespace TCP_Serveri
 
             return Encoding.UTF8.GetString(byteTextiDekriptuar);
         }
+        static public byte[] RSAEncryption(byte[] Data, RSAParameters RSAKey)
+        {
+            try
+            {
+                byte[] encryptedData;
+                using (RSACryptoServiceProvider RSA = new RSACryptoServiceProvider())
+                {
+                    RSA.ImportParameters(RSAKey); encryptedData = RSA.Encrypt(Data, false);
+                }
+                return encryptedData;
+            }
+            catch (CryptographicException e)
+            {
+                Console.WriteLine(e.Message);
+                return null;
+            }
+        }
+        
+         public byte[] RSADecryption(byte[] Data, RSAParameters RSAKey)
+        {
+            try
+            {
+                byte[] decryptedData;
+                using (RSACryptoServiceProvider RSA = new RSACryptoServiceProvider())
+                {
+                    RSA.ImportParameters(RSAKey);
+                    decryptedData = RSA.Decrypt(Data, false);
+                }
+                return decryptedData;
+            }
+            catch (CryptographicException e)
+            {
+                Console.WriteLine(e.ToString());
+                return null;
+            }
+        }
     }
 }
