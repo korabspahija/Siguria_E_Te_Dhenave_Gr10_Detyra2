@@ -20,8 +20,8 @@ namespace TCP_Serveri
         private PasswordHash pswhash = new PasswordHash();
         RNGCryptoServiceProvider RNGprovider = new RNGCryptoServiceProvider();
         DESCryptoServiceProvider objDes = new DESCryptoServiceProvider();
-        string key;
-        string iv;
+        string key="12345678";
+        string iv= GetUniqueKey(4);
         public Serveri()
         {
             InitializeComponent();
@@ -41,10 +41,10 @@ namespace TCP_Serveri
             txtMesazhi.Invoke((MethodInvoker)delegate ()
             {
                 //Korab Spahija 8
-            
+                string mesazhi = decrypt(e.MessageString);
 
-              string[] mesazhiArray = e.MessageString.Split(' ');
-                txtMesazhi.Text += e.MessageString;
+              string[] mesazhiArray = mesazhi.Split(' ');
+                txtMesazhi.Text +=mesazhi;
                 Studentet studenti = new Studentet();
                 studenti.emri = mesazhiArray[0];
                 studenti.mbiemri = mesazhiArray[1];
@@ -53,7 +53,7 @@ namespace TCP_Serveri
                 studenti.userId = mesazhiArray[4];
                 studenti.PasswordHash = pswhash.CreateHash(mesazhiArray[5]);
                 studenti.lendaPreferuar = mesazhiArray[6];
-                string path = "Studentet.json";
+                
                 string json = JsonConvert.SerializeObject(studenti);
                 Regjistrimi(json);
                 e.ReplyLine(string.Format("You said: {0}", mesazhiArray));
@@ -149,9 +149,11 @@ namespace TCP_Serveri
         {
             string[] info = ciphertext.Split('.');
             key = info[1];
-            iv = info[0];
-            objDes.Key = Encoding.Default.GetBytes(info[1]);
-            objDes.IV = Encoding.Default.GetBytes(info[0]);
+             iv = info[0];
+            //key = "12345678";
+            //iv = "12345678";
+            objDes.Key = Encoding.Default.GetBytes(key);
+            objDes.IV = Encoding.Default.GetBytes(iv);
             objDes.Padding = PaddingMode.Zeros;
             objDes.Mode = CipherMode.CBC;
 
@@ -201,7 +203,23 @@ namespace TCP_Serveri
                 Console.WriteLine(e.ToString());
                 return null;
             }
-        }       
+        }
+        public static string GetUniqueKey(int size)
+        {
+            char[] chars =
+                "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890".ToCharArray();
+            byte[] data = new byte[size];
+            using (RNGCryptoServiceProvider crypto = new RNGCryptoServiceProvider())
+            {
+                crypto.GetBytes(data);
+            }
+            StringBuilder result = new StringBuilder(size);
+            foreach (byte b in data)
+            {
+                result.Append(chars[b % (chars.Length)]);
+            }
+            return result.ToString();
+        }
     }
 }
    
