@@ -16,6 +16,7 @@ namespace TCP_Serveri
 {
     public partial class Serveri : Form
     {
+        RNGCryptoServiceProvider RNGprovider = new RNGCryptoServiceProvider();
         DESCryptoServiceProvider objDes = new DESCryptoServiceProvider();
         string key;
         string iv;
