@@ -1,0 +1,12 @@
+C:\Users\Admin\Documents\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP_Serveri\TCP_Serveri\bin\Debug\TCP_Serveri.exe.config
+C:\Users\Admin\Documents\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP_Serveri\TCP_Serveri\bin\Debug\TCP_Serveri.exe
+C:\Users\Admin\Documents\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP_Serveri\TCP_Serveri\bin\Debug\TCP_Serveri.pdb
+C:\Users\Admin\Documents\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP_Serveri\TCP_Serveri\bin\Debug\SimpleTCP.dll
+C:\Users\Admin\Documents\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP_Serveri\TCP_Serveri\obj\Debug\TCP_Serveri.csprojAssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP_Serveri\TCP_Serveri\obj\Debug\TCP_Serveri.Serveri.resources
+C:\Users\Admin\Documents\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP_Serveri\TCP_Serveri\obj\Debug\TCP_Serveri.Properties.Resources.resources
+C:\Users\Admin\Documents\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP_Serveri\TCP_Serveri\obj\Debug\TCP_Serveri.csproj.GenerateResource.cache
+C:\Users\Admin\Documents\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP_Serveri\TCP_Serveri\obj\Debug\TCP_Serveri.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP_Serveri\TCP_Serveri\obj\Debug\TCP_Serveri.csproj.CopyComplete
+C:\Users\Admin\Documents\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP_Serveri\TCP_Serveri\obj\Debug\TCP_Serveri.exe
+C:\Users\Admin\Documents\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP_Serveri\TCP_Serveri\obj\Debug\TCP_Serveri.pdb
