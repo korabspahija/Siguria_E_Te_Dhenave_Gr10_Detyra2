@@ -38,6 +38,8 @@ namespace TCP_Serveri
             //Update mesage to txtStatus
             txtMesazhi.Invoke((MethodInvoker)delegate ()
             {
+                int poz = e.MessageString.IndexOf(" ");
+
                 txtMesazhi.Text += e.MessageString;
                 e.ReplyLine(string.Format("You said: {0}", e.MessageString));
             });
@@ -50,14 +52,9 @@ namespace TCP_Serveri
             //Start server host
             txtMesazhi.Text += "Server starting...";
             System.Net.IPAddress ip = System.Net.IPAddress.Parse("127.0.0.1");
-            server.Start(ip, Convert.ToInt32(2020));
+            server.Start(ip, 2020);
         }
 
-        private void btnStop_Click(object sender, EventArgs e)
-        {
-            if (server.IsStarted)
-                server.Stop();  
-        }
         private string encrypt(string plaintext, string key, string iv)
         {
             objDes.Key = Encoding.Default.GetBytes(key);

@@ -30,45 +30,36 @@
         {
             this.txtMesazhi = new System.Windows.Forms.TextBox();
             this.btnStart = new System.Windows.Forms.Button();
-            this.btnStop = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtMesazhi
             // 
-            this.txtMesazhi.Location = new System.Drawing.Point(41, 78);
+            this.txtMesazhi.Location = new System.Drawing.Point(27, 51);
+            this.txtMesazhi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMesazhi.Multiline = true;
             this.txtMesazhi.Name = "txtMesazhi";
-            this.txtMesazhi.Size = new System.Drawing.Size(552, 115);
+            this.txtMesazhi.Size = new System.Drawing.Size(369, 76);
             this.txtMesazhi.TabIndex = 0;
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(41, 24);
+            this.btnStart.Location = new System.Drawing.Point(27, 16);
+            this.btnStart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(152, 35);
+            this.btnStart.Size = new System.Drawing.Size(101, 23);
             this.btnStart.TabIndex = 1;
             this.btnStart.Text = "Start";
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
-            // btnStop
-            // 
-            this.btnStop.Location = new System.Drawing.Point(228, 24);
-            this.btnStop.Name = "btnStop";
-            this.btnStop.Size = new System.Drawing.Size(152, 35);
-            this.btnStop.TabIndex = 2;
-            this.btnStop.Text = "Stop";
-            this.btnStop.UseVisualStyleBackColor = true;
-            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
-            // 
             // Serveri
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(648, 491);
-            this.Controls.Add(this.btnStop);
+            this.ClientSize = new System.Drawing.Size(432, 319);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.txtMesazhi);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Serveri";
             this.Text = "Serveri";
             this.Load += new System.EventHandler(this.Serveri_Load);
@@ -81,7 +72,6 @@
 
         private System.Windows.Forms.TextBox txtMesazhi;
         private System.Windows.Forms.Button btnStart;
-        private System.Windows.Forms.Button btnStop;
     }
 }
 
