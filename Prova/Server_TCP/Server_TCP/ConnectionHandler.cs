@@ -46,7 +46,7 @@ namespace Server_TCP
                     {
                         int poz = eDhenaEardhur.IndexOf(" ");
                         string command = eDhenaEardhur.Substring(0, poz);
-                        string sjson = eDhenaEardhur.Substring(poz + 1);
+                        string sjson =eDhenaEardhur.Substring(poz + 1);
 
                         switch (command.ToUpper())
                         {
@@ -85,8 +85,8 @@ namespace Server_TCP
             byte[] data = new byte[512];
             int recv = this.Klienti.Receive(data);
             string stringData = Encoding.ASCII.GetString(data, 0, recv);
-            eDhenaEardhur = stringData;
-            return stringData;
+            eDhenaEardhur = DesDekriptimi(stringData);
+            return DesDekriptimi(stringData);
         }
 
         private string DefaultFunctions()
