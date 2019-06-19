@@ -1,0 +1,12 @@
+C:\Users\Admin\source\repos\Klienti-TCP\Klienti-TCP\bin\Debug\Klienti-TCP.exe.config
+C:\Users\Admin\source\repos\Klienti-TCP\Klienti-TCP\bin\Debug\Klienti-TCP.exe
+C:\Users\Admin\source\repos\Klienti-TCP\Klienti-TCP\bin\Debug\Klienti-TCP.pdb
+C:\Users\Admin\source\repos\Klienti-TCP\Klienti-TCP\bin\Debug\SimpleTCP.dll
+C:\Users\Admin\source\repos\Klienti-TCP\Klienti-TCP\obj\Debug\Klienti-TCP.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\Klienti-TCP\Klienti-TCP\obj\Debug\Klienti_TCP.Klienti.resources
+C:\Users\Admin\source\repos\Klienti-TCP\Klienti-TCP\obj\Debug\Klienti_TCP.Properties.Resources.resources
+C:\Users\Admin\source\repos\Klienti-TCP\Klienti-TCP\obj\Debug\Klienti-TCP.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\Klienti-TCP\Klienti-TCP\obj\Debug\Klienti-TCP.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Klienti-TCP\Klienti-TCP\obj\Debug\Klienti-TCP.csproj.CopyComplete
+C:\Users\Admin\source\repos\Klienti-TCP\Klienti-TCP\obj\Debug\Klienti-TCP.exe
+C:\Users\Admin\source\repos\Klienti-TCP\Klienti-TCP\obj\Debug\Klienti-TCP.pdb
