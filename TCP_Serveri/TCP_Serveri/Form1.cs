@@ -39,9 +39,9 @@ namespace TCP_Serveri
             txtMesazhi.Invoke((MethodInvoker)delegate ()
             {
                 int poz = e.MessageString.IndexOf(" ");
-
+                string[] mesazhiArray = new[] { e.MessageString };
                 txtMesazhi.Text += e.MessageString;
-                e.ReplyLine(string.Format("You said: {0}", e.MessageString));
+                e.ReplyLine(string.Format("You said: {0}", mesazhiArray));
             });
         }
         
