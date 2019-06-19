@@ -1,4 +1,5 @@
-﻿using SimpleTCP;
+﻿using Newtonsoft.Json;
+using SimpleTCP;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +17,7 @@ namespace TCP_Serveri
 {
     public partial class Serveri : Form
     {
+        private PasswordHash pswhash = new PasswordHash();
         RNGCryptoServiceProvider RNGprovider = new RNGCryptoServiceProvider();
         DESCryptoServiceProvider objDes = new DESCryptoServiceProvider();
         string key;
@@ -38,10 +40,24 @@ namespace TCP_Serveri
             //Update mesage to txtStatus
             txtMesazhi.Invoke((MethodInvoker)delegate ()
             {
-                int poz = e.MessageString.IndexOf(" ");
-                string[] mesazhiArray = new[] { e.MessageString };
+                //Korab Spahija 8
+            
+
+              string[] mesazhiArray = e.MessageString.Split(' ');
                 txtMesazhi.Text += e.MessageString;
+                Studentet studenti = new Studentet();
+                studenti.emri = mesazhiArray[0];
+                studenti.mbiemri = mesazhiArray[1];
+                studenti.notaMesatare = mesazhiArray[2];
+                studenti.email = mesazhiArray[3];
+                studenti.userId = mesazhiArray[4];
+                studenti.PasswordHash = pswhash.CreateHash(mesazhiArray[5]);
+                studenti.lendaPreferuar = mesazhiArray[6];
+                string path = "Studentet.json";
+                string json = JsonConvert.SerializeObject(studenti);
+                Regjistrimi(json);
                 e.ReplyLine(string.Format("You said: {0}", mesazhiArray));
+                
             });
         }
         
@@ -54,7 +70,61 @@ namespace TCP_Serveri
             System.Net.IPAddress ip = System.Net.IPAddress.Parse("127.0.0.1");
             server.Start(ip, 2020);
         }
+        private string Regjistrimi(string sjson)
+        {
+            string return_value = "";
+            bool UserExist = false;
+            try
+            {
 
+                //Studentet studenti = JsonConvert.DeserializeObject<Studentet>(sjson);
+                Studentet studenti = JsonConvert.DeserializeObject<Studentet>(sjson);
+                           
+                string path = "Studentet.json";
+                if (File.Exists(path))
+                {
+                    sjson = File.ReadAllText(path);
+                    if (String.IsNullOrEmpty(sjson))
+                    {
+                        List<Studentet> lstStudentet = new List<Studentet>();
+                        lstStudentet.Add(studenti);
+                        File.WriteAllText(path, JsonConvert.SerializeObject(lstStudentet), Encoding.UTF8);
+                    }
+                    else
+                    {
+                        List<Studentet> lstStudentet = JsonConvert.DeserializeObject<List<Studentet>>(sjson);
+                        foreach (Studentet item in lstStudentet)
+                        {
+                            if (item.userId == studenti.userId)
+                            {
+                                return_value = "ERROR - Ekziston sudenti me username :" + studenti.userId;
+                                UserExist = true;
+                                break;
+                            }
+                        }
+                        if (!UserExist)
+                        {
+                            lstStudentet.Add(studenti);
+                            File.WriteAllText(path, JsonConvert.SerializeObject(lstStudentet), Encoding.UTF8);
+                            return_value = "OK - Jeni regjistruar me sukses me username " + studenti.userId;
+                        }
+                    }
+                }
+                else
+                {
+                    List<Studentet> lstStudentit = new List<Studentet>();
+                    lstStudentit.Add(studenti);
+                    File.WriteAllText(path, JsonConvert.SerializeObject(lstStudentit), Encoding.UTF8);
+                    return_value = "OK - Jeni regjistruar me sukses me username " + studenti.userId;
+                }
+            }
+            catch (Exception ex)
+            {
+                return_value = ex.Message;
+            }
+
+            return return_value;
+        }
         private string encrypt(string plaintext, string key, string iv)
         {
             objDes.Key = Encoding.Default.GetBytes(key);
@@ -131,6 +201,7 @@ namespace TCP_Serveri
                 Console.WriteLine(e.ToString());
                 return null;
             }
-        }
+        }       
     }
 }
+   
