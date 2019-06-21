@@ -43,31 +43,26 @@ namespace Server_TCP
                     string mesazhiDekriptuar = ReceiveData().Substring(11);
                     Console.WriteLine(dekriptimiDES(mesazhiDekriptuar));
 
-                    if (eDhenaEardhur.ToUpper().StartsWith("REGJISTRIMI") || eDhenaEardhur.ToUpper().StartsWith("AUTHENTIFIKIMI"))
+                    if (eDhenaEardhur.ToUpper().StartsWith("REGJISTRIMI"))
                     {
                         int poz = eDhenaEardhur.IndexOf(" ");
                         string command = eDhenaEardhur.Substring(0, poz);
                         string sjson = eDhenaEardhur.Substring(poz + 1);
 
-                        switch (command.ToUpper())
+                        if (command.ToUpper() == "REGJISTRIMI")
                         {
+                            SendData(Regjistrimi(sjson));
+                        }
+                        else
+                        {
+                            SendData("Operacioini nuk eshte valid!");
 
-                            case "REGJISTRIMI":
-                                SendData(Regjistrimi(sjson));
-                                break;
-                            case "AUTHENTIFIKIMI":
-                                SendData(Authentifikimi(sjson));
-                                break;
-                            default:
-                                SendData("Operacioini nuk eshte valid!");
-                                break;
                         }
                     }
-
+                    this.Klienti.Close();
+                    lidhjet--;
+                    Console.WriteLine("Klienti është shkëputur: {0} lidhje aktive", lidhjet);
                 }
-                this.Klienti.Close();
-                lidhjet--;
-                Console.WriteLine("Klienti është shkëputur: {0} lidhje aktive", lidhjet);
             }
             catch (Exception)
             {
@@ -92,7 +87,6 @@ namespace Server_TCP
 
         private string DefaultFunctions()
         {
-            //string allFunctions = "\nKomandat e mundshme \n(REGJISTRIMI, AUTHENTIFIKIMI)";
             string allFunctions = "\n";
             return allFunctions;
         }
@@ -154,51 +148,6 @@ namespace Server_TCP
 
             return return_value;
         }
-
-        private string Authentifikimi(string sjson)
-        {
-            string return_value = "";
-
-            Login login = JsonConvert.DeserializeObject<Login>(sjson);
-            string password = login.PasswordHash;
-            string UserId = login.userId;
-            bool UserExist = false;
-            string path = "Studentet.json";
-            if (File.Exists(path))
-            {
-                sjson = File.ReadAllText(path, Encoding.UTF8);
-                List<Studentet> lstStudentet = JsonConvert.DeserializeObject<List<Studentet>>(sjson);
-
-                foreach (var item in lstStudentet)
-                {
-                    if (item.userId == UserId)
-                    {
-                        UserExist = true;
-                        if (pswhash.ValidatePassword(password, item.PasswordHash))
-                        {
-                            return_value = "OK - Jeni autentifikuar me sukses";
-                        }
-                        else
-                        {
-                            return_value = "ERROR - Passwordi eshte gabim!";
-                        }
-                        break;
-                    }
-                }
-                if (!UserExist)
-                {
-                    return_value = "ERROR - User-i " + login.userId + " nuk ekziston!";
-                }
-            }
-            else
-            {
-                return_value = "ERROR - User-i " + login.userId + " nuk ekziston!";
-            }
-
-            return return_value;
-        }
-
-
         ///DES DEKRIPTIMI/////
         private string dekriptimiDES(string tekstiPerDekriptim)
         {
@@ -221,31 +170,5 @@ namespace Server_TCP
 
             return Encoding.UTF8.GetString(byteTextiDekriptuar);
         }
-
-        private void exporto()
-        {
-            string strXmlParametrat = objRsa.ToXmlString(true);
-            StreamWriter sw = new StreamWriter("CertifikataX509.pfx");
-            sw.Write(strXmlParametrat);
-            sw.Close();
-        }
-
-        private void importo()
-        {
-            StreamReader sr = new StreamReader("CertifikataX509.pfx");
-            string strXmlParametrat = sr.ReadToEnd();
-            sr.Close();
-
-            objRsa.FromXmlString(strXmlParametrat);
-        }
-
-        private string RsaDekriptim(string ciphertexti)
-        {
-            byte[] byteCiphertexti = Convert.FromBase64String(ciphertexti);
-            byte[] byteTextiDekriptuar = objRsa.Decrypt(byteCiphertexti, true);
-
-            return Encoding.UTF8.GetString(byteTextiDekriptuar);
-        }
-
     }
 }

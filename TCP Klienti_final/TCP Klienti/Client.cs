@@ -122,34 +122,7 @@ namespace TCP_Klienti
                 {
                     MessageBox.Show(ex.Message, "Vërejtje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
-            }
-
-        }
-
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
-            if (!Connected)
-                MessageBox.Show("Duhet të lidheni me server!", "Vërejtje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            else
-            {
-                try
-                {
-                    Login login = new Login();
-                    login.userId = txtUserName1.Text.Trim();
-                    login.PasswordHash = txtPassword1.Text.Trim();
-                    string json = JsonConvert.SerializeObject(login);
-                    string SendCommand = "Authentifikimi " + json;
-                    SendRequestToSrv(SendCommand);
-
-                    txtReceiveAnswer.AppendText("\n");
-                    txtReceiveAnswer.Refresh();
-                    txtReceiveAnswer.AppendText("\n" + ReceiveDataFromServer());
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message, "Vërejtje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                }
-            }
+            }   
 
         }
 
@@ -181,15 +154,6 @@ namespace TCP_Klienti
             return Convert.ToBase64String(byteCiphertexti);
             //Encoding.UTF8.GetString(byteCiphertexti);
 
-        }
-
-        //RSA
-        private string rsaEnkriptim(string plaintext)
-        {
-            byte[] byteCiphertexti = Convert.FromBase64String(plaintext);
-            byte[] byteTextiDekriptuar = objRsa.Decrypt(byteCiphertexti, true);
-
-               return Encoding.UTF8.GetString(byteTextiDekriptuar);
         }
     }
 }
