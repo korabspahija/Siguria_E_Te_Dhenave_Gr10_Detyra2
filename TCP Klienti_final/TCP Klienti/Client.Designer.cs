@@ -52,22 +52,15 @@
             this.lblEmriMbiemri = new System.Windows.Forms.Label();
             this.lblUserName = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnLogin = new System.Windows.Forms.Button();
-            this.txtPassword1 = new System.Windows.Forms.TextBox();
-            this.txtUserName1 = new System.Windows.Forms.TextBox();
-            this.lblPassword1 = new System.Windows.Forms.Label();
-            this.lblUserName1 = new System.Windows.Forms.Label();
             this.grbRegjistrimi.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
-            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnConnect
             // 
-            this.btnConnect.Location = new System.Drawing.Point(302, 10);
+            this.btnConnect.Location = new System.Drawing.Point(180, 12);
             this.btnConnect.Name = "btnConnect";
-            this.btnConnect.Size = new System.Drawing.Size(75, 22);
+            this.btnConnect.Size = new System.Drawing.Size(132, 50);
             this.btnConnect.TabIndex = 21;
             this.btnConnect.Text = "Connect";
             this.btnConnect.UseVisualStyleBackColor = true;
@@ -85,7 +78,7 @@
             // txtPorti
             // 
             this.txtPorti.Enabled = false;
-            this.txtPorti.Location = new System.Drawing.Point(217, 10);
+            this.txtPorti.Location = new System.Drawing.Point(76, 37);
             this.txtPorti.Name = "txtPorti";
             this.txtPorti.Size = new System.Drawing.Size(68, 20);
             this.txtPorti.TabIndex = 17;
@@ -94,7 +87,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(180, 13);
+            this.label4.Location = new System.Drawing.Point(39, 40);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(31, 13);
             this.label4.TabIndex = 19;
@@ -123,7 +116,7 @@
             this.txtReceiveAnswer.Location = new System.Drawing.Point(17, 345);
             this.txtReceiveAnswer.Multiline = true;
             this.txtReceiveAnswer.Name = "txtReceiveAnswer";
-            this.txtReceiveAnswer.Size = new System.Drawing.Size(595, 68);
+            this.txtReceiveAnswer.Size = new System.Drawing.Size(300, 68);
             this.txtReceiveAnswer.TabIndex = 15;
             // 
             // grbRegjistrimi
@@ -146,7 +139,7 @@
             this.grbRegjistrimi.Size = new System.Drawing.Size(316, 252);
             this.grbRegjistrimi.TabIndex = 22;
             this.grbRegjistrimi.TabStop = false;
-            this.grbRegjistrimi.Text = "Regjistrimi i mësimdhënësit";
+            this.grbRegjistrimi.Text = "Studenti";
             // 
             // btnSave
             // 
@@ -263,69 +256,11 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.btnLogin);
-            this.groupBox2.Controls.Add(this.txtPassword1);
-            this.groupBox2.Controls.Add(this.txtUserName1);
-            this.groupBox2.Controls.Add(this.lblPassword1);
-            this.groupBox2.Controls.Add(this.lblUserName1);
-            this.groupBox2.Location = new System.Drawing.Point(323, 68);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(289, 252);
-            this.groupBox2.TabIndex = 23;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Autentifikimi";
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.Location = new System.Drawing.Point(196, 215);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(75, 23);
-            this.btnLogin.TabIndex = 45;
-            this.btnLogin.Text = "Login";
-            this.btnLogin.UseVisualStyleBackColor = true;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
-            // 
-            // txtPassword1
-            // 
-            this.txtPassword1.Location = new System.Drawing.Point(75, 92);
-            this.txtPassword1.Name = "txtPassword1";
-            this.txtPassword1.PasswordChar = '*';
-            this.txtPassword1.Size = new System.Drawing.Size(196, 20);
-            this.txtPassword1.TabIndex = 44;
-            // 
-            // txtUserName1
-            // 
-            this.txtUserName1.Location = new System.Drawing.Point(75, 62);
-            this.txtUserName1.Name = "txtUserName1";
-            this.txtUserName1.Size = new System.Drawing.Size(196, 20);
-            this.txtUserName1.TabIndex = 43;
-            // 
-            // lblPassword1
-            // 
-            this.lblPassword1.AutoSize = true;
-            this.lblPassword1.Location = new System.Drawing.Point(5, 92);
-            this.lblPassword1.Name = "lblPassword1";
-            this.lblPassword1.Size = new System.Drawing.Size(56, 13);
-            this.lblPassword1.TabIndex = 42;
-            this.lblPassword1.Text = "Password:";
-            // 
-            // lblUserName1
-            // 
-            this.lblUserName1.AutoSize = true;
-            this.lblUserName1.Location = new System.Drawing.Point(5, 64);
-            this.lblUserName1.Name = "lblUserName1";
-            this.lblUserName1.Size = new System.Drawing.Size(63, 13);
-            this.lblUserName1.TabIndex = 41;
-            this.lblUserName1.Text = "User Name:";
-            // 
             // Client
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(622, 422);
-            this.Controls.Add(this.groupBox2);
+            this.ClientSize = new System.Drawing.Size(324, 422);
             this.Controls.Add(this.grbRegjistrimi);
             this.Controls.Add(this.btnConnect);
             this.Controls.Add(this.txtIP);
@@ -341,8 +276,6 @@
             this.grbRegjistrimi.ResumeLayout(false);
             this.grbRegjistrimi.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -373,12 +306,6 @@
         private System.Windows.Forms.Label lblUserName;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.ErrorProvider errorProvider1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.TextBox txtPassword1;
-        private System.Windows.Forms.TextBox txtUserName1;
-        private System.Windows.Forms.Label lblPassword1;
-        private System.Windows.Forms.Label lblUserName1;
 
 
     }

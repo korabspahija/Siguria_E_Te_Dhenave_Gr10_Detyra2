@@ -58,3 +58,27 @@ C:\Users\Admin\Desktop\Siguria_E_Te_Dhenave_Gr10_Detyra2-e91932a11c373c218f8c666
 C:\Users\Admin\Desktop\Siguria_E_Te_Dhenave_Gr10_Detyra2-e91932a11c373c218f8c6666500869c8e873466f\TCP Klienti\TCP Klienti\obj\Debug\TCP Klienti.csproj.CopyComplete
 C:\Users\Admin\Desktop\Siguria_E_Te_Dhenave_Gr10_Detyra2-e91932a11c373c218f8c6666500869c8e873466f\TCP Klienti\TCP Klienti\obj\Debug\TCP Klienti Eduard.exe
 C:\Users\Admin\Desktop\Siguria_E_Te_Dhenave_Gr10_Detyra2-e91932a11c373c218f8c6666500869c8e873466f\TCP Klienti\TCP Klienti\obj\Debug\TCP Klienti Eduard.pdb
+C:\Users\Admin\Desktop\Siguria_E_Te_Dhenave_Gr10_Detyra2-e91932a11c373c218f8c6666500869c8e873466f\TCP Klienti_final\TCP Klienti\bin\Debug\TCP Klienti Eduard.exe.config
+C:\Users\Admin\Desktop\Siguria_E_Te_Dhenave_Gr10_Detyra2-e91932a11c373c218f8c6666500869c8e873466f\TCP Klienti_final\TCP Klienti\bin\Debug\TCP Klienti Eduard.exe
+C:\Users\Admin\Desktop\Siguria_E_Te_Dhenave_Gr10_Detyra2-e91932a11c373c218f8c6666500869c8e873466f\TCP Klienti_final\TCP Klienti\bin\Debug\TCP Klienti Eduard.pdb
+C:\Users\Admin\Desktop\Siguria_E_Te_Dhenave_Gr10_Detyra2-e91932a11c373c218f8c6666500869c8e873466f\TCP Klienti_final\TCP Klienti\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\Siguria_E_Te_Dhenave_Gr10_Detyra2-e91932a11c373c218f8c6666500869c8e873466f\TCP Klienti_final\TCP Klienti\obj\Debug\TCP Klienti.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\Siguria_E_Te_Dhenave_Gr10_Detyra2-e91932a11c373c218f8c6666500869c8e873466f\TCP Klienti_final\TCP Klienti\obj\Debug\TCP_Klienti.Client.resources
+C:\Users\Admin\Desktop\Siguria_E_Te_Dhenave_Gr10_Detyra2-e91932a11c373c218f8c6666500869c8e873466f\TCP Klienti_final\TCP Klienti\obj\Debug\TCP_Klienti_Eduard.Properties.Resources.resources
+C:\Users\Admin\Desktop\Siguria_E_Te_Dhenave_Gr10_Detyra2-e91932a11c373c218f8c6666500869c8e873466f\TCP Klienti_final\TCP Klienti\obj\Debug\TCP Klienti.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\Siguria_E_Te_Dhenave_Gr10_Detyra2-e91932a11c373c218f8c6666500869c8e873466f\TCP Klienti_final\TCP Klienti\obj\Debug\TCP Klienti.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Siguria_E_Te_Dhenave_Gr10_Detyra2-e91932a11c373c218f8c6666500869c8e873466f\TCP Klienti_final\TCP Klienti\obj\Debug\TCP Klienti.csproj.CopyComplete
+C:\Users\Admin\Desktop\Siguria_E_Te_Dhenave_Gr10_Detyra2-e91932a11c373c218f8c6666500869c8e873466f\TCP Klienti_final\TCP Klienti\obj\Debug\TCP Klienti Eduard.exe
+C:\Users\Admin\Desktop\Siguria_E_Te_Dhenave_Gr10_Detyra2-e91932a11c373c218f8c6666500869c8e873466f\TCP Klienti_final\TCP Klienti\obj\Debug\TCP Klienti Eduard.pdb
+C:\Users\Admin\Documents\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP Klienti_final\TCP Klienti\bin\Debug\TCP Klienti Eduard.exe.config
+C:\Users\Admin\Documents\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP Klienti_final\TCP Klienti\bin\Debug\TCP Klienti Eduard.exe
+C:\Users\Admin\Documents\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP Klienti_final\TCP Klienti\bin\Debug\TCP Klienti Eduard.pdb
+C:\Users\Admin\Documents\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP Klienti_final\TCP Klienti\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Admin\Documents\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP Klienti_final\TCP Klienti\obj\Debug\TCP Klienti.csprojAssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP Klienti_final\TCP Klienti\obj\Debug\TCP_Klienti.Client.resources
+C:\Users\Admin\Documents\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP Klienti_final\TCP Klienti\obj\Debug\TCP_Klienti_Eduard.Properties.Resources.resources
+C:\Users\Admin\Documents\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP Klienti_final\TCP Klienti\obj\Debug\TCP Klienti.csproj.GenerateResource.cache
+C:\Users\Admin\Documents\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP Klienti_final\TCP Klienti\obj\Debug\TCP Klienti.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP Klienti_final\TCP Klienti\obj\Debug\TCP Klienti.csproj.CopyComplete
+C:\Users\Admin\Documents\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP Klienti_final\TCP Klienti\obj\Debug\TCP Klienti Eduard.exe
+C:\Users\Admin\Documents\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP Klienti_final\TCP Klienti\obj\Debug\TCP Klienti Eduard.pdb
