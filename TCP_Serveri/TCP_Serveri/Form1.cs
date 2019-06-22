@@ -26,8 +26,7 @@ namespace TCP_Serveri
         {
             InitializeComponent();
         }
-                                               
-       SimpleTcpServer server;
+        SimpleTcpServer server;
         private void Serveri_Load(object sender, EventArgs e)
         {
             server = new SimpleTcpServer();
@@ -66,8 +65,6 @@ namespace TCP_Serveri
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-           // byte[] celesi = X509.merrCelesinPublik();
-            //string result = System.Convert.ToBase64String(celesi);
             //Start server host
             txtMesazhi.Text += "Server starting...";
             System.Net.IPAddress ip = System.Net.IPAddress.Parse("127.0.0.1");
