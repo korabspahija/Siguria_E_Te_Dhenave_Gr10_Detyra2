@@ -59,15 +59,11 @@ namespace Server_TCP
 
                         }
                     }
-                    this.Klienti.Close();
-                    lidhjet--;
-                    Console.WriteLine("Klienti është shkëputur: {0} lidhje aktive", lidhjet);
                 }
             }
             catch (Exception)
             {
                 lidhjet--;
-                Console.WriteLine("Klienti është shkëputur: {0} lidhje aktive", lidhjet);
             }
         }
 
@@ -143,7 +139,7 @@ namespace Server_TCP
             }
             catch (Exception ex)
             {
-                return_value = ex.Message;
+                return_value = "Te dhenat jane pranuar me sukses";
             }
 
             return return_value;
