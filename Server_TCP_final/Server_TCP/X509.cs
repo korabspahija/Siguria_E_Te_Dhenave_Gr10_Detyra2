@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -13,7 +14,7 @@ namespace Server_TCP
         public static byte[] merrCelesinPublik()
         {
             //string Certificate = "C:\\Users\\PC\\Desktop\\Certifikata_X509\\CertifikataX509.pfx";
-            string Certificate = "CertifikataX509.pfx";
+            string Certificate = "C:\\Users\\Admin\\Documents\\GitHub\\Siguria_E_Te_Dhenave_Gr10_Detyra2\\Server_TCP_final\\Server_TCP\\bin\\DebugCertifikataX509.pfx";
             X509Certificate2 cert = new X509Certificate2(File.ReadAllBytes(Certificate), "12345678", X509KeyStorageFlags.MachineKeySet);
 
             byte[] celesipublik = cert.GetPublicKey();
@@ -21,6 +22,5 @@ namespace Server_TCP
 
             return cert.GetPublicKey();
         }
-
     }
 }
