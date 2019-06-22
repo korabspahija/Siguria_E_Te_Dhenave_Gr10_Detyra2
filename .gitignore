@@ -4,5 +4,3 @@
 *.ide-shm
 Server_TCP/.vs/Server_TCP/v16/.suo
 Server_TCP/.vs/Server_TCP/v16/Server/sqlite3/storage.ide-wal
-*.ide-wal
-*.ide-wal
