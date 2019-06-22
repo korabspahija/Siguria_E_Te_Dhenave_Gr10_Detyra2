@@ -24,3 +24,17 @@ C:\Users\Admin\Desktop\Git\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP_Serveri\TCP_Ser
 C:\Users\Admin\Desktop\Git\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP_Serveri\TCP_Serveri\obj\Debug\TCP_Serveri.csproj.CopyComplete
 C:\Users\Admin\Desktop\Git\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP_Serveri\TCP_Serveri\obj\Debug\TCP_Serveri.exe
 C:\Users\Admin\Desktop\Git\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP_Serveri\TCP_Serveri\obj\Debug\TCP_Serveri.pdb
+C:\Users\PC\Desktop\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP_Serveri\TCP_Serveri\bin\Debug\TCP_Serveri.exe.config
+C:\Users\PC\Desktop\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP_Serveri\TCP_Serveri\bin\Debug\TCP_Serveri.exe
+C:\Users\PC\Desktop\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP_Serveri\TCP_Serveri\bin\Debug\TCP_Serveri.pdb
+C:\Users\PC\Desktop\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP_Serveri\TCP_Serveri\bin\Debug\Newtonsoft.Json.dll
+C:\Users\PC\Desktop\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP_Serveri\TCP_Serveri\bin\Debug\SimpleTCP.dll
+C:\Users\PC\Desktop\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP_Serveri\TCP_Serveri\bin\Debug\Newtonsoft.Json.xml
+C:\Users\PC\Desktop\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP_Serveri\TCP_Serveri\obj\Debug\TCP_Serveri.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP_Serveri\TCP_Serveri\obj\Debug\TCP_Serveri.Serveri.resources
+C:\Users\PC\Desktop\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP_Serveri\TCP_Serveri\obj\Debug\TCP_Serveri.Properties.Resources.resources
+C:\Users\PC\Desktop\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP_Serveri\TCP_Serveri\obj\Debug\TCP_Serveri.csproj.GenerateResource.cache
+C:\Users\PC\Desktop\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP_Serveri\TCP_Serveri\obj\Debug\TCP_Serveri.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP_Serveri\TCP_Serveri\obj\Debug\TCP_Serveri.csproj.CopyComplete
+C:\Users\PC\Desktop\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP_Serveri\TCP_Serveri\obj\Debug\TCP_Serveri.exe
+C:\Users\PC\Desktop\GitHub\Siguria_E_Te_Dhenave_Gr10_Detyra2\TCP_Serveri\TCP_Serveri\obj\Debug\TCP_Serveri.pdb
